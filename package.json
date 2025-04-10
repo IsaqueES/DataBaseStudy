@@ -1,0 +1,19 @@
+{
+  "name": "databasestudy",
+  "version": "1.0.0",
+  "description": "Estudos de database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "databasestudy"
+  },
+  "author": "Isaque",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.9"
+  }
+}
