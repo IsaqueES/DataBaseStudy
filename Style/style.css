@@ -48,9 +48,37 @@ a {
   background-color: var(--cp);
   border: 1px solid black;
   border-radius: 10px;
-  padding: 9%;
+  padding: 100px;
   display: flex;
+  max-width: fit-content;
+  width: 0px;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   color: white;
+  transition: all 0.3s ease-in-out;
+}
+.studybox:hover {
+  background-color: rgb(128, 20, 20);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#add {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 100px;
+  display: flex;
+  max-width: fit-content;
+  width: 0px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+#add:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
