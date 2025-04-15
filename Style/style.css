@@ -11,8 +11,12 @@ a {
   text-decoration: none;
   color: white;
 }
+
+:root {
+  --cp: rgba(128, 20, 20, 0.473);
+}
 #header {
-  background-color: rgba(44, 116, 209, 0.616);
+  background-color: var(--cp);
   padding: 20px;
   text-align: center;
   font-weight: bold;
@@ -41,7 +45,7 @@ a {
   flex-wrap: wrap;
 }
 .studybox {
-  background-color: rgba(44, 116, 209, 0.616);
+  background-color: var(--cp);
   border: 1px solid black;
   border-radius: 10px;
   padding: 9%;
