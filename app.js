@@ -11,8 +11,11 @@ app.use(express.static(staticFolderPath));
 
 // Define uma rota para a página principal
 app.get("/", (req, res) => {
-  // Certifique-se de que o caminho para o arquivo index.html está correto
   res.sendFile(path.join(__dirname, "src", "index.html"));
+});
+
+app.get("/add", (req, res) => {
+  res.sendFile(path.join(__dirname, "src", "add.html"));
 });
 
 // Define a porta do servidor

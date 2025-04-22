@@ -2,6 +2,14 @@
   margin: 0;
   text-align: center;
   font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  text-decoration: none; /* Remove sublinhado */
+  border: none; /* Remove borda */
+  background: none; /* Remove fundo */
+  outline: none; /* Remove contorno ao focar */
 }
 img {
   width: 5%;
@@ -23,7 +31,9 @@ a {
   font-size: 30px;
   color: white;
 }
-#me {
+#me,
+#addbutton,
+button {
   padding: 25px;
   border-radius: 5px;
   border: 1px solid black;
@@ -31,6 +41,7 @@ a {
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 #mother-box {
   background-color: rgb(240, 240, 240);
@@ -78,6 +89,44 @@ a {
 }
 #add:hover {
   background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.box {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 30px;
+  margin: auto; /* Centraliza horizontalmente */
+  text-align: center;
+
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Adicione um contêiner para os inputs */
+.input-container {
+  flex-wrap: wrap;
+  display: flex; /* Coloca os inputs na mesma linha */
+  gap: 10px; /* Espaçamento entre os inputs */
+  justify-content: center; /* Centraliza os inputs horizontalmente */
+  align-items: center; /* Alinha os inputs verticalmente */
+}
+
+/* Ajuste os inputs, se necessário */
+input {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease-in-out;
+}
+#addbutton:hover {
+  background-color: var(--cp);
   color: white;
   cursor: pointer;
   transition: all 0.3s ease-in-out;

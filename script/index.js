@@ -12,5 +12,5 @@ function add() {
   var boxesHTML = Array.from(boxes)
     .map((box) => box.outerHTML)
     .join("");
-  mother.innerHTML = boxesHTML + html + addcross;
+  mother.innerHTML = boxesHTML + html;
 }
